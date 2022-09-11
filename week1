@@ -1,0 +1,277 @@
+''' PRACTICE WORK 1
+name, surname, age, location = input("What's your first name? "), input("What's your last name? "), int(input("How old are you? ")), input("Where do you live? ")
+print("Your first name is {}".format(name), "Your last name is {}".format(surname), "You are {} years old".format(age), "You live in {}".format(location), sep="\n")
+'''
+
+''' PRACTICE WORK 2
+import math
+x = int(input("Enter you value of x: "))
+t = int(input("Enter you value of t: "))
+z = (9 * math.pi * t + 10 * math.cos(x)) / (math.sqrt(t) - math.fabs(math.sin(t))) * math.pow(math.e,x)
+print("z={0:.2f}".format(z))
+'''
+
+''' PRACTICE WORK 4
+Task 1
+price = int(input("Price: "))
+for i in range(1,11):
+    print("Cost of {} kg of sweets is {}".format(i,i*price), sep="\n")
+
+Task 2
+a, length = int(input("Enter numbers in your sequence: ")), 1
+s = a
+while a != 0:
+    a = int(input())
+    length += 1
+    s += a
+print("Sum of all numbers in your sequence: {}".format(s), "Number of all numbers in your sequence: {}".format(length), sep="\n")
+'''
+
+''' INDEPENDENT WORK 2
+Task 1.1
+import math
+a = int(input("Enter the value of a: "))
+b = int(input("Enter the value of b: "))
+h = int(input("Enter the value of h: "))
+s = ((a**2 + b) * h)/(2*(a-b)+4)
+print("S is equal to {0:.2f}".format(s))
+
+Task 1.2
+import math
+x = int(input())
+y = int(input())
+H = math.sqrt(math.cos(2*y)+math.sin(4*y)+math.sqrt(math.e**x+math.e**(-x)))/(((math.e**x+math.e**(-x))**3)*(math.cos(2*y)+math.sin(4*y)-2)**2)
+print("H is equal to {0:.2f}".format(H))
+
+Task 1.3.1
+import math
+x, y = 2, 1
+answer = (((x**y)**x)+((x**x)**y)-(x**(4)))
+print("{0:.2f}".format(answer))
+
+Task 1.3.2
+import math
+x, y, z = 1, 4,3
+answer = math.pow((abs(1 / math.tan(y) + 6)), 1/3)+ math.sqrt((x+1)**3/(4*y-2*z))
+print("{0:.2f}".format(answer))
+
+Task 1.3.3
+import math
+x, y = 3, 0.2
+answer = 5*x*y/(x**3-4) + math.exp(x**2) + math.sqrt(math.cos(y)**2-y**2)
+print("{0:.2f}".format(answer))
+
+Task 1.3.4
+import math
+x, y = 4, 5
+answer = math.sqrt(abs(y)) + math.atan(math.log10(x)/math.log10(math.e))**3/(x**y-y+1)
+print("{0:.2f}".format(answer))
+
+Task 1.3.5
+import math
+x, y, z = 3, 1, 2
+answer = math.pow(4,x*y) - math.pow(x,y*z) + math.pow((x*y),z)
+print("{0:.2f}".format(answer))
+
+Task 1.3.6
+import math
+x, y, z = 2, 2, 1
+answer = (4*abs(x) - (x*y*z)**2)/(x + math.exp(y*x) - 2*y*z)
+print("{0:.2f}".format(answer))
+
+Task 1.3.7
+import math
+x, y, z = 0.8, 0.1, 4
+answer = math.pow((1-x+math.atan(x-7*y))/(4*x*z-math.pow(math.log10(y),2)), 1/5)
+print("{0:.2f}".format(answer))
+
+Task 1.3.8
+import math
+x, y, z = 3, 1, 3
+answer = (2*3*4)/(math.sin(x)**3 + math.tan(y)**3) - math.sqrt(z**(x-y))
+print("{0:.2f}".format(answer))
+
+Task 2
+import math
+a = int(input("Enter the value of a: "))
+b = int(input("Enter the value of b: "))
+c = math.hypot(a, b)
+s = (a+b)/2
+p =a+b+c
+print("The area of the triangle is {0:.2f}".format(s))
+print("The perimeter of the traingle is {0:.2f}".format(p))
+
+Task 3
+import math
+a = int(input("Enter the value of a: "))
+b = int(input("Enter the value of b: "))
+c = int(input("Enter the value of c: "))
+D = b**2 - 4*a*c
+print("D is equal to", D)
+
+if D > 0:
+    x1 = (-b + math.sqrt(D))/(2*a)
+    x2 = (-b - math.sqrt(D))/(2*a)
+    print("First root is {0:.2f}".format(x1), "Second root is {0:.2f}".format(x2), sep="\n")
+elif D == 0:
+    x = (-b + math.sqrt(D))/(2*a)
+    print("The root is {0:.2f}".format(x))
+else:
+    print("No solution")
+
+Task 4
+import math
+print("Which figure's area you want to find?", "1. Circle", "2. Rectangle", "3. Triangle", sep="\n")
+n = int(input())
+if n == 1:
+    r = int(input("Enter the raduis of a circle: "))
+    area = (math.pi*(r**2))
+    print("The are of a circle is: {0:.2f}".format(area))
+elif n == 2:
+    a = int(input("Enter the length of first side of rectangle: "))
+    b = int(input("Enter the length of second side of rectangle: "))
+    area = (a*b)
+    print("The are of rectangle is: {0:.2f}".format(area))
+elif n ==3:
+    a = int(input("Enter the length of first side of triangle: "))
+    b = int(input("Enter the length of second side of triangle: "))
+    c = int(input("Enter the length of third side of triangle: "))
+    p = (a+b+c)/2
+    area = math.sqrt(p*(p-a)*(p-b)*(p-c))
+    print("The area of triangle is: {0:.2f}".format(area))
+else:
+    print("Choose number between 1 and 3!")
+'''
+
+''' INDEPENDENT WORK 3
+Task 1
+health = int(input())
+def is_alive(health):
+    if health <= 0:
+        return False
+    else:
+        return True
+
+print(is_alive(health))
+
+Task 2
+number_of_month = int(input())
+def event(number_of_month):
+    if number_of_month==12 or 1<=number_of_month<=2:
+        month_name="winter"
+        season_event="White snow fell outside the window"
+        return("You were born in {}. {}".format(month_name, season_event))
+    elif 3<=number_of_month<=5:
+        month_name="spring"
+        season_event="Birds sang beautiful songs"
+        return("You were born in {}. {}".format(month_name, season_event))
+    elif 6<=number_of_month<=8:
+        month_name="summer"
+        season_event="The sun shone brighter than ever"
+        return("You were born in {}. {}".format(month_name, season_event))
+    elif 9<=number_of_month<=11:
+        month_name="autumn"
+        season_event="The harvest was incredible"
+        return("You were born in {}. {}".format(month_name, season_event))
+    else:
+        return("The is no such number of month")
+print(event(number_of_month))
+'''
+
+''' INDEPENDENT WORK 4
+Task 1.1
+f_name, l_name, age, ph_number = input("What is your first name? "), input("What is your last name? "),input("How old are you? ") , int(input("What is your phone number? "))
+print("Your first name is {}, last name is {}".format(f_name, l_name), "Your age is {}".format(age), "Your phone number is {}".format(ph_number), sep="\n")
+
+Task 1.2
+import math
+print("Which figure's area you want to find?", "1. Circle", "2. Rectangle", "3. Triangle", sep="\n")
+n = int(input())
+if n == 1:
+    r = int(input("Enter the raduis of a circle: "))
+    area = (math.pi*(r**2))
+    print("The are of a circle is: {0:.2f}".format(area))
+elif n == 2:
+    a = int(input("Enter the length of first side of rectangle: "))
+    b = int(input("Enter the length of second side of rectangle: "))
+    area = (a*b)
+    print("The are of rectangle is: {0:.2f}".format(area))
+elif n ==3:
+    a = int(input("Enter the length of first side of triangle: "))
+    b = int(input("Enter the length of second side of triangle: "))
+    c = int(input("Enter the length of third side of triangle: "))
+    p = (a+b+c)/2
+    area = math.sqrt(p*(p-a)*(p-b)*(p-c))
+    print("The area of triangle is: {0:.2f}".format(area))
+else:
+    print("Choose number between 1 and 3!")
+
+Task 1.4
+import math
+A = int(input("Enter value of A: "))
+print("Y is eqaul to", math.pow(A,2)/3 + (math.pow(A,2)+4)/6 + math.sqrt(math.pow(A,2)+4)/4 + math.sqrt(math.pow((math.pow(A,2)+4),3))/4)
+
+Task 1.5
+print("Choose random number and after that", "a) multiply the planned number by 5", "b) add 8", "c) multiply the sum by 2", "Enter your result", sep="\n")
+n = int(input())
+g = ((n / 2) - 8) / 5
+print("Your initially choosen number is:", g)
+
+Task 2.1
+first_number, operation, second_number = int(input("First number: ")), input("Operation: "), int(input("Second number: "))
+if operation == "+":
+    print("{} + {} = {}".format(first_number,second_number,first_number+second_number))
+elif operation == "-":
+    print("{} - {} = {}".format(first_number,second_number,first_number-second_number))
+elif operation == "*":
+    print("{} * {} = {}".format(first_number,second_number,first_number*second_number))
+elif operation == "/":
+    print("{} / {} = {}".format(first_number,second_number,first_number/second_number))
+else:
+    print("There is no such operation")
+
+Task 2.2
+first_number, operation, second_number = int(input("First number: ")), input("Operation: "), int(input("Second number: "))
+if operation == "+":
+    print("{} + {} = {}".format(first_number,second_number,first_number+second_number))
+elif operation == "-":
+    print("{} - {} = {}".format(first_number,second_number,first_number-second_number))
+elif operation == "*":
+    print("{} * {} = {}".format(first_number,second_number,first_number*second_number))
+elif operation == "/":
+    if second_number == 0:
+        print("Can not apply division by 0")
+    else:
+        print("{} / {} = {}".format(first_number,second_number,first_number/second_number))
+else:
+    print("There is no such operation")
+
+Task 2.3
+n = 14
+if(n > 10 and n != 12 and n <= 15 or n == 18):
+    print("True")
+else:
+    print("False")
+
+Task 2.4
+n = 34
+while n < 67:
+    print(n)
+    n += 2
+
+Task 2.5
+n = 1
+while True:
+    print(n)
+    if n == 10:
+        break
+    n += 1
+
+Task 2.7
+word, number = input("Enter your word: "), int(input("Enter your number: "))
+for i in range(len(word)):
+    n = 0
+    while n < number:
+        print(word[i])
+        n += 1
+'''
