@@ -1,0 +1,92 @@
+'''
+Task 1
+a = input()
+def wordsStartWithE(s):
+    if s[0] == 'E' or s[0] == 'e':
+        return s.count(" e") + 1
+    else:
+        return s.count(" e")
+
+Task 2
+a = input()
+print(a.count(':',0,len(a)))
+print(a.replace(':','%',len(a)))
+
+Task 3
+a = input()
+print(a.count('.',0,len(a)))
+print(deleteCharacter(a,'.'))
+
+Task 4
+a = input()
+print(a.count('a',0,len(a)))
+print(a.replace('a','o',len(a)))
+print(len(a))
+
+Task 5
+a = input()
+print(a.lower())
+
+Task 6
+a = input()
+print(a.count('a',0,len(a)))
+print(deleteCharacter(a,'a'))
+
+Task 7
+c = input()
+print(c.replace('n','*',c.count("n",0,len(c)//2)))
+
+Task 8
+a = input()
+print(a.count(" ",0,len(a)) + 1)
+
+Task 9
+print(s.count(wrd,0,len(s)))
+
+Task 10
+a = input()
+print(a.title())
+
+Task 11
+def longestSeqN(s):
+    max = -999
+    temp = 1
+    for i in range(len(s)):
+        if s[i] == 'n' and s[i+1] == 'n':
+            temp += 1
+        else:
+            if temp > max:
+                max = temp
+                temp = 1
+    return max
+a = input()
+print(a.replace('!','.',len(a)))
+print(longestSeqN(a))
+
+Task 12
+a = input().split()
+for i in a:
+    if i[-1] == "i":
+        print(i)
+
+Task 13
+a = input()
+n = a.find('(')
+ans = ''
+for i in range(len(a)):
+    if a[i] == ")":
+        break
+    if i > n:
+        ans += a[i]
+print(ans)
+
+Task 14
+a = input().split()
+for i in a:
+    if i[0] == "a" and i[-1] == "i":
+        print(i)
+
+Task 15
+a = input()
+print(a.count('t',0,len(a)))
+'''
