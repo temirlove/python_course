@@ -1,0 +1,4 @@
+Hello, my name is Temirlan.
+This is my python project for the final exam.
+I am 18 years old.
+My homeland is Kazakhstan.
